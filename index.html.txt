@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lớp 7A - Gia Bảo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+/* SEARCH */
+.search{
+    text-align:center;
+    margin:20px;
+}
+
+input{
+    padding:10px;
+    border-radius:20px;
+    border:none;
+    width:250px;
+}
+
+/* TABLE */
+.container{
+    width:90%;
+    margin:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:rgba(255,255,255,0.1);
+}
+
+th,td{
+    padding:10px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+tr:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+/* HIGHLIGHT */
+.me{
+    background:#22c55e !important;
+}
+.leader{
+    background:#f59e0b !important;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+/* ANIMATION */
+.fade{
+    animation:fade 1s;
+}
+@keyframes fade{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>🎓 LỚP 7A</h2>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Danh sách</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1 class="fade">LỚP 7A – GIA BẢO 💙</h1>
+        <p>Lớp trưởng: Nguyễn Đức Khôi</p>
+    </div>
+</section>
+
+<div class="search">
+    <input type="text" placeholder="🔍 Tìm tên..." onkeyup="search()">
+</div>
+
+<div class="container">
+<table id="table">
+<tr><th>STT</th><th>Họ tên</th></tr>
+
+<tr><td>1</td><td>Phan Thái An</td></tr>
+<tr><td>2</td><td>Dương Quỳnh Anh</td></tr>
+<tr><td>3</td><td>Phan Thục Anh</td></tr>
+<tr class="me"><td>4</td><td>Lê Đức Gia Bảo ⭐</td></tr>
+<tr class="me"><td>5</td><td>Nguyễn Gia Bảo ⭐</td></tr>
+<tr><td>6</td><td>Phan Cao</td></tr>
+<tr><td>7</td><td>Văn Lê Thùy Dung</td></tr>
+<tr><td>8</td><td>Bùi Tiến Đạt</td></tr>
+<tr><td>9</td><td>Lê Thị Vân Hà</td></tr>
+<tr><td>10</td><td>Lê Nguyên Ngọc Hân</td></tr>
+<tr><td>11</td><td>Tô Gia Hân</td></tr>
+<tr><td>12</td><td>Nguyễn Văn Huy Hoàng</td></tr>
+<tr><td>13</td><td>Phạm Xuân Hoàng</td></tr>
+<tr><td>14</td><td>Nguyễn Thế An Huy</td></tr>
+<tr><td>15</td><td>Phạm Thị Văn Khánh</td></tr>
+<tr><td>16</td><td>Nguyễn Đình Bảo Khôi</td></tr>
+<tr class="leader"><td>17</td><td>Nguyễn Đức Khôi 👑</td></tr>
+<tr><td>18</td><td>Trần Nguyễn Ngọc Linh</td></tr>
+<tr><td>19</td><td>Nguyễn Danh Hoàng Long</td></tr>
+<tr><td>20</td><td>Phạm Nhật Minh</td></tr>
+<tr><td>21</td><td>Nguyễn Hà My</td></tr>
+<tr><td>22</td><td>Lê Bảo Nam</td></tr>
+<tr><td>23</td><td>Phan Bảo Nam</td></tr>
+<tr><td>24</td><td>Bùi Bảo Ngân</td></tr>
+<tr><td>25</td><td>Ngô Trần Bảo Ngân</td></tr>
+<tr><td>26</td><td>Lê Hoàng Nguyên</td></tr>
+<tr><td>27</td><td>Nguyễn Khôi Nguyên</td></tr>
+<tr><td>28</td><td>Phan Lê Thảo Nguyên</td></tr>
+<tr><td>29</td><td>Nguyễn Danh Nhật</td></tr>
+<tr><td>30</td><td>Phan Hiền Nhi</td></tr>
+<tr><td>31</td><td>Lê Văn Phong</td></tr>
+<tr><td>32</td><td>Nguyễn Hải Phong</td></tr>
+<tr><td>33</td><td>Phan Thiên Phúc</td></tr>
+<tr><td>34</td><td>Võ Minh Quân</td></tr>
+<tr><td>35</td><td>Nguyễn Đình Anh Quốc</td></tr>
+<tr><td>36</td><td>Nguyễn Thục Quyên</td></tr>
+<tr><td>37</td><td>Phan Bảo Quyên</td></tr>
+<tr><td>38</td><td>Nguyễn Đức Quyên</td></tr>
+<tr><td>39</td><td>Đào Nhật Tân</td></tr>
+<tr><td>40</td><td>Nguyễn Phương Thảo</td></tr>
+<tr><td>41</td><td>Lê Nguyễn Đài Trang</td></tr>
+<tr><td>42</td><td>Lê Thị Quỳnh Trang</td></tr>
+<tr><td>43</td><td>Phạm Thị Đoan Trang</td></tr>
+<tr><td>44</td><td>Phan Thùy Trang</td></tr>
+<tr><td>45</td><td>Trịnh Bích Trang</td></tr>
+<tr><td>46</td><td>Lê Nguyễn Bảo Trâm</td></tr>
+<tr><td>47</td><td>Nguyễn Minh Trí</td></tr>
+<tr><td>48</td><td>Lê Ngọc Tùng</td></tr>
+<tr><td>49</td><td>Đậu Nguyên Thảo Vy</td></tr>
+<tr><td>50</td><td>Nguyễn Ngọc Na Vy</td></tr>
+
+</table>
+</div>
+
+<footer>
+💖 Lớp 7A | Gia Bảo | Nguyễn Đức Khôi 💖
+</footer>
+
+<script>
+function search(){
+    let input=document.querySelector("input").value.toLowerCase();
+    let rows=document.querySelectorAll("#table tr");
+
+    rows.forEach((row,i)=>{
+        if(i===0) return;
+        let text=row.innerText.toLowerCase();
+        row.style.display=text.includes(input)?"":"none";
+    });
+}
+</script>
+
+</body>
+</html>
